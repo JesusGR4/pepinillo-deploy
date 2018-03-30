@@ -1,0 +1,11 @@
+version: "2"
+services:
+ node:
+  build: ../pepinillo-backoffice
+  volumes:
+   - ../pepinillo-backoffice:/app
+  ports:
+   - "3000:3000"
+  tty: true
+  environment:
+   - DEBUG=true 
