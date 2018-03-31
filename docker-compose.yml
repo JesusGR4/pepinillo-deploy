@@ -9,3 +9,10 @@ services:
   tty: true
   environment:
    - DEBUG=true 
+ web:
+  build: ../pepinillo-web
+  ports:
+   - "8088:80"
+  tty: true
+  environment:
+   - PORT=80
