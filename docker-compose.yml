@@ -13,6 +13,8 @@ services:
   build: ../pepinillo-web
   ports:
    - "8088:80"
+  volumes:
+   - ../pepinillo-web/app:/app
   tty: true
   environment:
    - PORT=80
